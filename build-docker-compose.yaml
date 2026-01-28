@@ -110,7 +110,7 @@ services:
 
   backend:
     build: 
-      context: dockerfiles/flask
+      context: flask
       target: builder 
     # flask requires SIGINT to stop gracefully
     # (default stop signal from Compose is SIGTERM)

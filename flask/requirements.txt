@@ -1,5 +1,7 @@
 pymongo
 flask
+pyspark
+tensorflow
 docker-py 
 feedparser 
 nosexcover 

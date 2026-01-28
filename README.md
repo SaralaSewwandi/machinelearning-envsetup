@@ -25,4 +25,20 @@ git branch -M master
 git remote add origin https://github.com/SaralaSewwandi/machinelearning-envsetup.git
 
 git push -u origin master
+
+
+# Clear all existing docker objects to set up a cleaned docker environment
+
+sudo docker stop -vf $(sudo docker ps -aq)
+
+sudo docker rm -vf $(sudo docker ps -aq)
+
+sudo docker system prune
+
+sudo docker system prune - - volumes
+
+sudo docker system prune -a --volumes
+
+sudo docker rmi -f $(sudo docker images -aq)
+
   
