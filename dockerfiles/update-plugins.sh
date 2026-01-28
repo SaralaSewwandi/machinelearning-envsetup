@@ -1,6 +1,6 @@
 #!/bin/bash -x
 JENKINS_HOST=admin:admin@localhost:8080
-
+#do not run this as it created a new branch stud this script later
 curl -O "http://$JENKINS_HOST/jnlpJars/jenkins-cli.jar"
 UPDATE_LIST=$( java -jar jenkins-cli.jar -s http://$JENKINS_HOST/ list-plugins | grep -e ')$' | awk '{ print $1 }' );
 
