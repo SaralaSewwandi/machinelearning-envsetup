@@ -1,6 +1,6 @@
 # machinelearning-envsetup
 
-#1.create a master branch in the repository otherwise main branch created  by default
+# 1.create a master branch in the repository otherwise main branch created  by default
 
 git clone https://github.com/SaralaSewwandi/machinelearning-envsetup.git
 
